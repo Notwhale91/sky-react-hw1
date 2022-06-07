@@ -2,37 +2,27 @@ import React from "react";
 import ReactDOM from "react-dom";
 import logo from "./logo.svg";
 import "./App.css";
+import Counter from "./Counter";
+import ReactTimer from "./ReacTimer";
+import Clock from "./Clock";
 
 
-const text='Текст';
-const textP='<p>текст</p>';
-const text1='<p>текст1</p>';
-const text2='<p>текст2</p>';
-const attr='block';
-const str='block';
-const show=true;
-const arr=['a', 'b', 'c', 'd', 'e'];
-const getText=()=>{
-  return '<p>текст</p>'
-};
-const getNum1=()=>{
-  return 1
-};
-const getNum2=()=>{
-  return 2
-};
-
-const Book = (props) => {
-  return React.createElement("div", {}, [
-    React.createElement("h2", {}, props.name),
-    React.createElement("p", {}, props.year),
-    React.createElement("p", {}, props.price)
-  ]);
-};
 
 function App() {
   return (
 <div>
+<ReactTimer/>
+<Clock />
+
+</div>
+  
+ 
+  );
+}
+
+export default App;
+ 
+/*
 
 <div>Текст</div>
 <div>{text}</div>
@@ -54,16 +44,37 @@ function App() {
 </div>
 <div>{getText()}</div>
 <div>{getNum1()+getNum2()}</div>
-  <div>
+
     <Book name="JS for beginners" year="2018" price="1000" />
     <Book name="React for beginners" year="2019" price="1200" />
     <Book name="Vue for beginners" year="2021" price="1500" />
-  </div>
-</div>
-  
- 
-  );
-}
+ */
 
-export default App;
- 
+    /*
+const text='Текст';
+const textP='<p>текст</p>';
+const text1='<p>текст1</p>';
+const text2='<p>текст2</p>';
+const attr='block';
+const str='block';
+const show=true;
+const arr=['a', 'b', 'c', 'd', 'e'];
+const getText=()=>{
+  return '<p>текст</p>'
+};
+const getNum1=()=>{
+  return 1
+};
+const getNum2=()=>{
+  return 2
+};
+
+const Book = (props) => {
+ <div>
+   <h2>{props.name}</h2>
+   <p>{props.year}</p>
+   <p>{props.price}</p>
+ </div>
+};
+
+*/
